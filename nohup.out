@@ -1,0 +1,1637 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.3.RELEASE)
+
+2019-09-06 17:33:33.870 [main] INFO  org.jeecg.JeecgApplication:50 - Starting JeecgApplication v2.0.2 on localhost with PID 4021 (/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar started by linminfeng in /Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot)
+2019-09-06 17:33:33.882 [main] INFO  org.jeecg.JeecgApplication:679 - The following profiles are active: test
+2019-09-06 17:33:38.263 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-06 17:33:38.269 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-06 17:33:38.385 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 79ms. Found 0 repository interfaces.
+2019-09-06 17:33:39.433 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroConfig' of type [org.jeecg.config.ShiroConfig$$EnhancerBySpringCGLIB$$ace47ddc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 17:33:39.889 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroRealm' of type [org.jeecg.modules.shiro.authc.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 17:33:40.404 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 17:33:40.530 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 17:33:40.739 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8cdf1446] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 17:33:41.577 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 17:33:41.603 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$f66d8517] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 17:33:41.635 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 17:33:41.650 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 17:33:41.716 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 17:33:41.732 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$a1f8d290] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 17:33:42.344 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 17:33:42.947 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 17:33:43.000 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConfig' of type [org.jeecg.config.RedisConfig$$EnhancerBySpringCGLIB$$f7b30526] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 17:33:43.205 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$9ff7f1f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 17:33:43.256 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 17:33:44.280 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-09-06 17:33:44.324 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-06 17:33:44.349 [main] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2019-09-06 17:33:44.351 [main] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-09-06 17:33:44.372 [main] INFO  org.apache.catalina.core.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/linminfeng/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-09-06 17:33:44.561 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeecg-boot]:173 - Initializing Spring embedded WebApplicationContext
+2019-09-06 17:33:44.562 [main] INFO  org.springframework.web.context.ContextLoader:296 - Root WebApplicationContext: initialization completed in 10319 ms
+2019-09-06 17:33:45.891 [main] INFO  c.b.dynamic.datasource.DynamicDataSourceCreator:113 - 动态数据源-检测到druid存在,如配置中未指定type,druid会默认配置
+2019-09-06 17:33:48.512 [main] INFO  com.alibaba.druid.pool.DruidDataSource:1003 - {dataSource-1,master} inited
+2019-09-06 17:33:48.513 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:203 - 初始共加载 1 个数据源
+2019-09-06 17:33:48.514 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:142 - 动态数据源-加载 master 成功
+2019-09-06 17:33:48.515 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:212 - 当前的默认数据源是单数据源，数据源名为 master
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Registered plugin: 'org.jeecg.config.mybatis.MybatisInterceptor@6e521c1e'
+Registered plugin: 'AbstractSqlParserHandler(sqlParserList=null, sqlParserFilter=null)'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/classes!/org/jeecg/business/order/mapper/xml/JeecgOrderMainMapper.xml]'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/demo/test/mapper/xml/JeecgOrderCustomerMapper.xml]'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/system/mapper/xml/SysUserMapper.xml]'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/system/mapper/xml/SysUserAgentMapper.xml]'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/system/mapper/xml/SysDataLogMapper.xml]'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/ngalain/mapper/xml/NgAlainMapper.xml]'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/demo/test/mapper/xml/JeecgDemoMapper.xml]'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/message/mapper/xml/SysMessageMapper.xml]'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/system/mapper/xml/SysDictItemMapper.xml]'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/system/mapper/xml/SysDictMapper.xml]'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/system/mapper/xml/SysAnnouncementSendMapper.xml]'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/system/mapper/xml/SysCategoryMapper.xml]'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/demo/test/mapper/xml/JoaDemoMapper.xml]'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/system/mapper/xml/SysPermissionDataRuleMapper.xml]'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/system/mapper/xml/SysLogMapper.xml]'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/system/mapper/xml/SysDepartMapper.xml]'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/system/mapper/xml/SysAnnouncementMapper.xml]'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/quartz/mapper/xml/QuartzJobMapper.xml]'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/demo/test/mapper/xml/JeecgOrderTicketMapper.xml]'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/message/mapper/xml/SysMessageTemplateMapper.xml]'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/system/mapper/xml/SysPermissionMapper.xml]'
+Parsed mapper file: 'URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/system/mapper/xml/SysUserDepartMapper.xml]'
+2019-09-06 17:34:02.306 [main] INFO  org.quartz.impl.StdSchedulerFactory:1208 - Using default implementation for ThreadExecutor
+2019-09-06 17:34:02.361 [main] INFO  org.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-09-06 17:34:02.365 [main] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.0 created.
+2019-09-06 17:34:02.374 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:672 - Using db table-based data access locking (synchronization).
+2019-09-06 17:34:02.381 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:145 - JobStoreCMT initialized.
+2019-09-06 17:34:02.392 [main] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2019-09-06 17:34:02.402 [main] INFO  org.quartz.impl.StdSchedulerFactory:1362 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-09-06 17:34:02.406 [main] INFO  org.quartz.impl.StdSchedulerFactory:1366 - Quartz scheduler version: 2.3.0
+2019-09-06 17:34:02.408 [main] INFO  org.quartz.core.QuartzScheduler:2287 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1e53135d
+2019-09-06 17:34:04.728 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver:59 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-09-06 17:34:05.099 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-06 17:34:06.065 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-06 17:34:08.017 [main] WARN  o.s.b.a.freemarker.FreeMarkerAutoConfiguration:70 - Cannot find template location(s): [classpath:/templates] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-09-06 17:34:08.593 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:160 - Context refreshed
+2019-09-06 17:34:08.708 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:163 - Found 1 custom documentation plugin(s)
+2019-09-06 17:34:08.813 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:41 - Scanning for api listing references
+2019-09-06 17:34:09.341 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean:726 - Starting Quartz Scheduler now
+2019-09-06 17:34:09.951 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:866 - Freed 0 triggers from 'acquired' / 'blocked' state.
+2019-09-06 17:34:10.022 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:876 - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2019-09-06 17:34:10.023 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:889 - Recovery complete.
+2019-09-06 17:34:10.055 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:896 - Removed 0 'complete' triggers.
+2019-09-06 17:34:10.087 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:901 - Removed 0 stale fired job entries.
+2019-09-06 17:34:10.148 [main] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-09-06 17:34:10.180 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-06 17:34:10.257 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path '/jeecg-boot'
+2019-09-06 17:34:10.263 [main] INFO  org.jeecg.JeecgApplication:59 - Started JeecgApplication in 38.581 seconds (JVM running for 39.483)
+2019-09-06 17:34:10.295 [main] INFO  org.jeecg.JeecgApplication:26 - 
+----------------------------------------------------------
+	Application Jeecg-Boot is running! Access URLs:
+	Local: 		http://localhost:8080/jeecg-boot/
+	External: 	http://127.0.0.1:8080/jeecg-boot/
+	swagger-ui: 	http://127.0.0.1:8080/jeecg-boot/swagger-ui.html
+	Doc: 		http://127.0.0.1:8080/jeecg-boot/doc.html
+----------------------------------------------------------
+2019-09-06 17:34:19.447 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeecg-boot]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-06 17:34:19.449 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-09-06 17:34:19.529 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:546 - Completed initialization in 79 ms
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a5a798a] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5886e7d5] will not be managed by Spring
+==>  Preparing: select * from sys_user where username = ? and del_flag = '0' 
+==> Parameters: jeecg(String)
+<==    Columns: id, username, realname, password, salt, avatar, birthday, sex, email, phone, org_code, status, del_flag, activiti_sync, create_by, create_time, update_by, update_time
+<==        Row: a75d45a015c44384a04449ee80dc3503, jeecg, 林敏峰, 3dd8371f3cf8240e, vDDkDzrK, files/20190719/YourName_1563518555133.jpg, 1995-10-20 00:00:00.0, 1, lmf951020@163.com, 18695709329, A03, 1, 0, 1, admin, 2019-02-13 16:02:36.0, admin, 2019-08-21 16:21:04.0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a5a798a]
+2019-09-06 17:34:20.787 [http-nio-8080-exec-2] INFO  io.lettuce.core.EpollProvider:68 - Starting without optional epoll library
+2019-09-06 17:34:20.798 [http-nio-8080-exec-2] INFO  io.lettuce.core.KqueueProvider:70 - Starting without optional kqueue library
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67f86d4d] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5886e7d5] will not be managed by Spring
+==>  Preparing: select a.* from sys_depart a join sys_user_depart b on a.id = b.dep_id where b.user_id = ? 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String)
+<==    Columns: id, parent_id, depart_name, depart_name_en, depart_name_abbr, depart_order, description, org_type, org_code, mobile, fax, address, memo, status, del_flag, create_by, create_time, update_by, update_time
+<==        Row: ada4e05e954247eea7fae39d0f282ef4, , Making Fun 总部, null, null, 0, <<BLOB>>, 1, A03, 18695709329, null, 福建省福州市 MF 大厦, null, null, 0, admin, 2019-08-21 16:17:55.0, null, null
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67f86d4d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3db7ebad] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5886e7d5] will not be managed by Spring
+==>  Preparing: UPDATE sys_user SET org_code = ? where username = ? 
+==> Parameters: A03(String), jeecg(String)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3db7ebad]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a34cf28] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5886e7d5] will not be managed by Spring
+==>  Preparing: INSERT INTO sys_log ( id, create_by, create_time, ip, log_content, log_type ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+==> Parameters: 99f5298127ce42dd4838c8e9072fa9f6(String), jeecg(String), 2019-09-06 17:34:21.622(Timestamp), 127.0.0.1(String), 用户名: jeecg,登录成功！(String), 1(Integer)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a34cf28]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d354a32] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5886e7d5] will not be managed by Spring
+==>  Preparing: select * from sys_user where username = ? and del_flag = '0' 
+==> Parameters: jeecg(String)
+<==    Columns: id, username, realname, password, salt, avatar, birthday, sex, email, phone, org_code, status, del_flag, activiti_sync, create_by, create_time, update_by, update_time
+<==        Row: a75d45a015c44384a04449ee80dc3503, jeecg, 林敏峰, 3dd8371f3cf8240e, vDDkDzrK, files/20190719/YourName_1563518555133.jpg, 1995-10-20 00:00:00.0, 1, lmf951020@163.com, 18695709329, A03, 1, 0, 1, admin, 2019-02-13 16:02:36.0, admin, 2019-08-21 16:21:04.0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d354a32]
+2019-09-06 17:34:22.318 [http-nio-8080-exec-3] INFO  o.j.m.system.controller.SysPermissionController:120 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Njc3NjQyNjAsInVzZXJuYW1lIjoiamVlY2cifQ.LvXzRAESKQwqARD6vPghiNuBI4IHhN57fF3C4WmX8yw
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ef8f4e3] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5886e7d5] will not be managed by Spring
+==>  Preparing: select * from sys_user where username = ? and del_flag = '0' 
+==> Parameters: jeecg(String)
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15429ae5] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@731602c1] will not be managed by Spring
+==>  Preparing: SELECT p.* FROM sys_permission p WHERE exists( select a.id from sys_role_permission a join sys_role b on a.role_id = b.id join sys_user_role c on c.role_id = b.id join sys_user d on d.id = c.user_id where p.id = a.permission_id AND d.username = ? ) and p.del_flag = 0 order by p.sort_no ASC 
+<==    Columns: id, username, realname, password, salt, avatar, birthday, sex, email, phone, org_code, status, del_flag, activiti_sync, create_by, create_time, update_by, update_time
+<==        Row: a75d45a015c44384a04449ee80dc3503, jeecg, 林敏峰, 3dd8371f3cf8240e, vDDkDzrK, files/20190719/YourName_1563518555133.jpg, 1995-10-20 00:00:00.0, 1, lmf951020@163.com, 18695709329, A03, 1, 0, 1, admin, 2019-02-13 16:02:36.0, admin, 2019-08-21 16:21:04.0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ef8f4e3]
+==> Parameters: jeecg(String)
+<==    Columns: id, parent_id, name, url, component, component_name, redirect, menu_type, perms, perms_type, sort_no, always_show, icon, is_route, is_leaf, keep_alive, hidden, description, create_by, create_time, update_by, update_time, del_flag, rule_flag, status
+<==        Row: 1367a93f2c410b169faa7abcbad2f77c, 6e73eb3c26099c191bf03852ee1310a1, 基本设置, /account/settings/base, account/settings/BaseSetting, null, null, 1, BaseSettings, null, null, 0, null, 1, 1, null, 1, null, null, 2018-12-26 18:58:35.0, admin, 2019-03-20 12:57:31.0, 0, 0, null
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11020b77] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5886e7d5] will not be managed by Spring
+==>  Preparing: select a.* from sys_depart a join sys_user_depart b on a.id = b.dep_id where b.user_id = ? 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String)
+<==        Row: 4f66409ef3bbd69c1d80469d6e2a885e, 6e73eb3c26099c191bf03852ee1310a1, 账户绑定, /account/settings/binding, account/settings/Binding, null, null, 1, BindingSettings, null, null, null, null, 1, 1, null, null, null, null, 2018-12-26 19:01:20.0, null, null, 0, 0, null
+<==        Row: 882a73768cfd7f78f3a37584f7299656, 6e73eb3c26099c191bf03852ee1310a1, 个性化设置, /account/settings/custom, account/settings/Custom, null, null, 1, CustomSettings, null, null, null, null, 1, 1, null, null, null, null, 2018-12-26 19:00:46.0, null, 2018-12-26 21:13:25.0, 0, 0, null
+<==        Row: ec8d607d0156e198b11853760319c646, 6e73eb3c26099c191bf03852ee1310a1, 安全设置, /account/settings/security, account/settings/Security, null, null, 1, SecuritySettings, null, null, null, null, 1, 1, null, null, null, null, 2018-12-26 18:59:52.0, null, null, 0, 0, null
+<==        Row: fedfbf4420536cacc0218557d263dfea, 6e73eb3c26099c191bf03852ee1310a1, 新消息通知, /account/settings/notification, account/settings/Notification, null, null, 1, NotificationSettings, null, null, null, , 1, 1, null, null, null, null, 2018-12-26 19:02:05.0, null, null, 0, 0, null
+<==        Row: 9502685863ab87f0ad1134142788a385, , 首页, /dashboard/analysis, dashboard/Analysis, null, null, 0, null, null, 0, 0, home, 1, 1, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-03-29 11:04:13.0, 0, 0, null
+<==        Row: 190c2b43bec6a5f7a4194a85db67d96a, d7d6e2e4e2934f2c9385a623fd98c6f3, 角色维护, /isystem/roleUserList, system/RoleUserList, null, null, 1, null, null, 1, 0, null, 1, 1, null, 0, null, admin, 2019-04-17 15:13:56.0, null, null, 0, 0, null
+<==        Row: 1a0811914300741f4e11838ff37a1d3a, 3f915b2769fc80648e92d04e84ca059d, 手机号禁用, null, null, null, null, 2, user:form:phone, 2, 1, 0, null, 0, 1, null, 0, null, admin, 2019-05-11 17:19:30.0, admin, 2019-05-11 18:00:22.0, 0, 0, 1
+<==        Row: 2aeddae571695cd6380f6d6d334d6e7d, f0675b52d89100ee88472b6800754a08, 布局统计报表, /report/ArchivesStatisticst, jeecg/report/ArchivesStatisticst, null, null, 1, null, null, 1, 0, null, 1, 1, null, 0, null, admin, 2019-04-03 18:32:48.0, null, null, 0, 0, null
+<==        Row: 3f915b2769fc80648e92d04e84ca059d, d7d6e2e4e2934f2c9385a623fd98c6f3, 用户管理, /isystem/user, system/UserList, null, null, 1, null, null, 1, 0, null, 1, 0, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-03-16 11:20:33.0, 0, 0, null
+<==        Row: 4148ec82b6acd69f470bea75fe41c357, 2a470fc0c3954d9dbb61de6d80846549, 单表模型示例, /jeecg/jeecgDemoList, jeecg/JeecgDemoList, DemoList, null, 1, null, null, 1, 0, null, 1, 1, null, 0, null, null, 2018-12-28 15:57:30.0, admin, 2019-02-15 16:24:37.0, 0, 0, null
+<==    Columns: id, parent_id, depart_name, depart_name_en, depart_name_abbr, depart_order, description, org_type, org_code, mobile, fax, address, memo, status, del_flag, create_by, create_time, update_by, update_time
+<==        Row: ada4e05e954247eea7fae39d0f282ef4, , Making Fun 总部, null, null, 0, <<BLOB>>, 1, A03, 18695709329, null, 福建省福州市 MF 大厦, null, null, 0, admin, 2019-08-21 16:17:55.0, null, null
+<==      Total: 1
+<==        Row: 45c966826eeff4c99b8f8ebfe74511fc, d7d6e2e4e2934f2c9385a623fd98c6f3, 部门管理, /isystem/depart, system/DepartList, null, null, 1, null, null, 1, 0, null, 1, 1, null, 0, null, admin, 2019-01-29 18:47:40.0, admin, 2019-03-07 19:23:16.0, 0, 0, null
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11020b77]
+Creating a new SqlSession
+<==        Row: 53a9230444d33de28aa11cc108fb1dba, d7d6e2e4e2934f2c9385a623fd98c6f3, 我的消息, /isps/userAnnouncement, system/UserAnnouncementList, null, null, 1, null, null, 1, 0, null, 1, 1, null, 0, null, admin, 2019-04-19 10:16:00.0, null, null, 0, 0, null
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20d9ff6d] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5886e7d5] will not be managed by Spring
+<==        Row: 5c2f42277948043026b7a14692456828, d7d6e2e4e2934f2c9385a623fd98c6f3, 我的部门, /isystem/departUserList, system/DepartUserList, null, null, 1, null, null, 1, 0, null, 1, 1, null, 0, null, admin, 2019-04-17 15:12:24.0, null, null, 0, 0, null
+<==        Row: 65a8f489f25a345836b7f44b1181197a, c65321e57b7949b7a975313220de0422, 403, /exception/403, exception/403, null, null, 1, null, null, 1, null, null, 1, 1, null, null, null, null, 2018-12-25 20:34:38.0, null, null, 0, 0, null
+==>  Preparing: UPDATE sys_user SET org_code = ? where username = ? 
+==> Parameters: A03(String), jeecg(String)
+<==        Row: 7593c9e3523a17bca83b8d7fe8a34e58, 3f915b2769fc80648e92d04e84ca059d, 添加用户按钮, , null, null, null, 2, user:add, 1, 1, 0, null, 1, 1, null, 0, null, admin, 2019-03-16 11:20:33.0, admin, 2019-05-17 18:31:25.0, 0, 0, 1
+<==        Row: aedbf679b5773c1f25e9f7b10111da73, 08e6b9dc3c04489c8e1ff2ce6f105aa4, SQL监控, {{ window._CONFIG['domianURL'] }}/druid/, layouts/IframePageView, null, null, 1, null, null, 1, 0, null, 1, 1, null, 0, null, admin, 2019-01-30 09:43:22.0, admin, 2019-03-23 19:00:46.0, 0, 0, null
+<==        Row: d86f58e7ab516d3bc6bfb1fe10585f97, 717f6bee46f44a3897eca9abd6e2ec44, 个人中心, /account/center, account/center/Index, null, null, 1, null, null, 1, null, null, 1, 1, null, null, null, null, 2018-12-25 20:34:38.0, null, null, 0, 0, null
+<==        Row: f0675b52d89100ee88472b6800754a08, , 统计报表, /report, layouts/RouteView, null, null, 0, null, null, 1, 0, bar-chart, 1, 0, null, 0, null, admin, 2019-04-03 18:32:02.0, admin, 2019-05-19 18:34:13.0, 0, 0, null
+<==        Row: 13212d3416eb690c2e1d5033166ff47a, 2e42e3835c2b44ec9f7bc26c146ee531, 失败, /result/fail, result/Error, null, null, 1, null, null, 2, null, null, 1, 1, null, null, null, null, 2018-12-25 20:34:38.0, null, null, 0, 0, null
+<==        Row: 6ad53fd1b220989a8b71ff482d683a5a, 2a470fc0c3954d9dbb61de6d80846549, 一对多Tab示例, /jeecg/tablist/JeecgOrderDMainList, jeecg/tablist/JeecgOrderDMainList, null, null, 1, null, null, 2, 0, null, 1, 1, null, 0, null, admin, 2019-02-20 14:45:09.0, admin, 2019-02-21 16:26:21.0, 0, 0, null
+<==        Row: 6e73eb3c26099c191bf03852ee1310a1, 717f6bee46f44a3897eca9abd6e2ec44, 个人设置, /account/settings/base, account/settings/Index, null, null, 1, null, null, 2, 1, null, 1, 0, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-04-19 09:41:05.0, 0, 0, null
+<==        Row: d2bbf9ebca5a8fa2e227af97d2da7548, c65321e57b7949b7a975313220de0422, 404, /exception/404, exception/404, null, null, 1, null, null, 2, null, null, 1, 1, null, null, null, null, 2018-12-25 20:34:38.0, null, null, 0, 0, null
+<==        Row: fb367426764077dcf94640c843733985, 2a470fc0c3954d9dbb61de6d80846549, 一对多示例, /jeecg/JeecgOrderMainList, jeecg/JeecgOrderMainList, null, null, 1, null, null, 2, 0, null, 1, 1, null, 0, null, admin, 2019-02-15 16:24:11.0, admin, 2019-02-18 10:50:14.0, 0, 0, null
+<==        Row: 020b06793e4de2eee0007f603000c769, f0675b52d89100ee88472b6800754a08, ViserChartDemo, /report/ViserChartDemo, jeecg/report/ViserChartDemo, null, null, 1, null, null, 3, 0, null, 1, 1, null, 0, null, admin, 2019-04-03 19:08:53.0, admin, 2019-04-03 19:08:53.0, 0, 0, null
+<==        Row: 2dbbafa22cda07fa5d169d741b81fe12, 08e6b9dc3c04489c8e1ff2ce6f105aa4, 在线文档, {{ window._CONFIG['domianURL'] }}/swagger-ui.html#/, layouts/IframePageView, null, null, 1, null, null, 3, 0, null, 1, 1, null, 0, null, admin, 2019-01-30 10:00:01.0, admin, 2019-03-23 19:44:43.0, 0, 0, null
+<==        Row: 8fb8172747a78756c11916216b8b8066, 717f6bee46f44a3897eca9abd6e2ec44, 工作台, /dashboard/workplace, dashboard/Workplace, null, null, 1, null, null, 3, 0, null, 1, 1, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-04-02 11:45:02.0, 0, 0, null
+<==        Row: b4dfc7d5dd9e8d5b6dd6d4579b1aa559, c65321e57b7949b7a975313220de0422, 500, /exception/500, exception/500, null, null, 1, null, null, 3, null, null, 1, 1, null, null, null, null, 2018-12-25 20:34:38.0, null, null, 0, 0, null
+<==        Row: e6bfd1fcabfd7942fdd05f076d1dad38, 2a470fc0c3954d9dbb61de6d80846549, 打印测试, /jeecg/PrintDemo, jeecg/PrintDemo, null, null, 1, null, null, 3, 0, null, 1, 1, null, 0, null, admin, 2019-02-19 15:58:48.0, admin, 2019-05-07 20:14:39.0, 0, 0, null
+<==        Row: 339329ed54cf255e1f9392e84f136901, 2a470fc0c3954d9dbb61de6d80846549, helloworld, /jeecg/helloworld, jeecg/helloworld, null, null, 1, null, null, 4, 0, null, 1, 1, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-02-15 16:24:56.0, 0, 0, null
+<==        Row: a400e4f4d54f79bf5ce160ae432231af, 2a470fc0c3954d9dbb61de6d80846549, 百度, http://www.baidu.com, layouts/IframePageView, null, null, 1, null, null, 4, 0, null, 1, 1, null, 0, null, admin, 2019-01-29 19:44:06.0, admin, 2019-02-15 16:25:02.0, 0, 0, null
+<==        Row: d7d6e2e4e2934f2c9385a623fd98c6f3, , 系统管理, /isystem, layouts/RouteView, null, null, 0, null, null, 4, 0, setting, 1, 0, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-03-31 22:19:52.0, 0, 0, null
+<==        Row: 08e6b9dc3c04489c8e1ff2ce6f105aa4, , 系统监控, /dashboard3, layouts/RouteView, null, null, 0, null, null, 6, 0, dashboard, 1, 0, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-03-31 22:19:58.0, 0, 0, null
+<==        Row: c6cf95444d80435eb37b2f9db3971ae6, 2a470fc0c3954d9dbb61de6d80846549, 数据回执模拟, /jeecg/InterfaceTest, jeecg/InterfaceTest, null, null, 1, null, null, 6, 0, null, 1, 1, null, 0, null, admin, 2019-02-19 16:02:23.0, admin, 2019-02-21 16:25:45.0, 0, 0, null
+<==        Row: e08cb190ef230d5d4f03824198773950, d7d6e2e4e2934f2c9385a623fd98c6f3, 系统通告, /isystem/annountCement, system/SysAnnouncementList, null, null, 1, annountCement, null, 6, null, , 1, 1, null, null, null, null, 2019-01-02 17:23:01.0, null, 2019-01-02 17:31:23.0, 0, 0, null
+<==        Row: 2a470fc0c3954d9dbb61de6d80846549, , 常见案例, /jeecg, layouts/RouteView, null, null, 0, null, null, 7, 0, qrcode, 1, 0, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-04-02 11:46:42.0, 0, 0, null
+<==        Row: c65321e57b7949b7a975313220de0422, null, 异常页, /exception, layouts/RouteView, null, null, 0, null, null, 8, null, warning, 1, 0, null, null, null, null, 2018-12-25 20:34:38.0, null, null, 0, 0, null
+<==        Row: 717f6bee46f44a3897eca9abd6e2ec44, null, 个人页, /account, layouts/RouteView, null, null, 0, null, null, 9, 0, user, 1, 0, null, null, null, null, 2018-12-25 20:34:38.0, null, null, 0, 0, null
+<==      Total: 38
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15429ae5]
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20d9ff6d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@712df438] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5886e7d5] will not be managed by Spring
+==>  Preparing: INSERT INTO sys_log ( id, create_by, create_time, ip, log_content, log_type ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+==> Parameters: ec0225dbff4cd7028ee3d63b76323b4e(String), jeecg(String), 2019-09-06 17:34:22.615(Timestamp), 127.0.0.1(String), 用户名: jeecg,登录成功！(String), 1(Integer)
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54150a32] was not registered for synchronization because synchronization is not active
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@712df438]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23c81718] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5886e7d5] will not be managed by Spring
+==>  Preparing: select * from sys_user where username = ? and del_flag = '0' 
+==> Parameters: jeecg(String)
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@731602c1] will not be managed by Spring
+==>  Preparing: SELECT id,parent_id,name,perms,perms_type,icon,component,component_name,url,redirect,sort_no,menu_type,is_leaf AS leaf,is_route AS route,keep_alive,description,create_by,del_flag,rule_flag,hidden,create_time,update_by,update_time,status,always_show FROM sys_permission WHERE del_flag = ? AND menu_type = ? 
+==> Parameters: 0(Integer), 2(Integer)
+<==    Columns: id, username, realname, password, salt, avatar, birthday, sex, email, phone, org_code, status, del_flag, activiti_sync, create_by, create_time, update_by, update_time
+<==        Row: a75d45a015c44384a04449ee80dc3503, jeecg, 林敏峰, 3dd8371f3cf8240e, vDDkDzrK, files/20190719/YourName_1563518555133.jpg, 1995-10-20 00:00:00.0, 1, lmf951020@163.com, 18695709329, A03, 1, 0, 1, admin, 2019-02-13 16:02:36.0, admin, 2019-08-21 16:21:04.0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23c81718]
+<==    Columns: id, parent_id, name, perms, perms_type, icon, component, component_name, url, redirect, sort_no, menu_type, leaf, route, keep_alive, description, create_by, del_flag, rule_flag, hidden, create_time, update_by, update_time, status, always_show
+<==        Row: 1a0811914300741f4e11838ff37a1d3a, 3f915b2769fc80648e92d04e84ca059d, 手机号禁用, user:form:phone, 2, null, null, null, null, null, 1, 2, 1, 0, null, null, admin, 0, 0, 0, 2019-05-11 17:19:30.0, admin, 2019-05-11 18:00:22.0, 1, 0
+<==        Row: 7593c9e3523a17bca83b8d7fe8a34e58, 3f915b2769fc80648e92d04e84ca059d, 添加用户按钮, user:add, 1, null, null, null, , null, 1, 2, 1, 1, null, null, admin, 0, 0, 0, 2019-03-16 11:20:33.0, admin, 2019-05-17 18:31:25.0, 1, 0
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54150a32]
+2019-09-06 17:34:22.888 [http-nio-8080-exec-6] INFO  o.j.m.system.controller.SysPermissionController:120 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Njc3NjQyNjIsInVzZXJuYW1lIjoiamVlY2cifQ.CcD-fkcyRr_Z2ieauJUV_91kTaXinIWBWag9v-UnJnU
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3000732f] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@731602c1] will not be managed by Spring
+==>  Preparing: SELECT p.* FROM sys_permission p WHERE exists( select a.id from sys_role_permission a join sys_role b on a.role_id = b.id join sys_user_role c on c.role_id = b.id join sys_user d on d.id = c.user_id where p.id = a.permission_id AND d.username = ? ) and p.del_flag = 0 order by p.sort_no ASC 
+==> Parameters: jeecg(String)
+<==    Columns: id, parent_id, name, url, component, component_name, redirect, menu_type, perms, perms_type, sort_no, always_show, icon, is_route, is_leaf, keep_alive, hidden, description, create_by, create_time, update_by, update_time, del_flag, rule_flag, status
+<==        Row: 1367a93f2c410b169faa7abcbad2f77c, 6e73eb3c26099c191bf03852ee1310a1, 基本设置, /account/settings/base, account/settings/BaseSetting, null, null, 1, BaseSettings, null, null, 0, null, 1, 1, null, 1, null, null, 2018-12-26 18:58:35.0, admin, 2019-03-20 12:57:31.0, 0, 0, null
+<==        Row: 4f66409ef3bbd69c1d80469d6e2a885e, 6e73eb3c26099c191bf03852ee1310a1, 账户绑定, /account/settings/binding, account/settings/Binding, null, null, 1, BindingSettings, null, null, null, null, 1, 1, null, null, null, null, 2018-12-26 19:01:20.0, null, null, 0, 0, null
+<==        Row: 882a73768cfd7f78f3a37584f7299656, 6e73eb3c26099c191bf03852ee1310a1, 个性化设置, /account/settings/custom, account/settings/Custom, null, null, 1, CustomSettings, null, null, null, null, 1, 1, null, null, null, null, 2018-12-26 19:00:46.0, null, 2018-12-26 21:13:25.0, 0, 0, null
+<==        Row: ec8d607d0156e198b11853760319c646, 6e73eb3c26099c191bf03852ee1310a1, 安全设置, /account/settings/security, account/settings/Security, null, null, 1, SecuritySettings, null, null, null, null, 1, 1, null, null, null, null, 2018-12-26 18:59:52.0, null, null, 0, 0, null
+<==        Row: fedfbf4420536cacc0218557d263dfea, 6e73eb3c26099c191bf03852ee1310a1, 新消息通知, /account/settings/notification, account/settings/Notification, null, null, 1, NotificationSettings, null, null, null, , 1, 1, null, null, null, null, 2018-12-26 19:02:05.0, null, null, 0, 0, null
+<==        Row: 9502685863ab87f0ad1134142788a385, , 首页, /dashboard/analysis, dashboard/Analysis, null, null, 0, null, null, 0, 0, home, 1, 1, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-03-29 11:04:13.0, 0, 0, null
+<==        Row: 190c2b43bec6a5f7a4194a85db67d96a, d7d6e2e4e2934f2c9385a623fd98c6f3, 角色维护, /isystem/roleUserList, system/RoleUserList, null, null, 1, null, null, 1, 0, null, 1, 1, null, 0, null, admin, 2019-04-17 15:13:56.0, null, null, 0, 0, null
+<==        Row: 1a0811914300741f4e11838ff37a1d3a, 3f915b2769fc80648e92d04e84ca059d, 手机号禁用, null, null, null, null, 2, user:form:phone, 2, 1, 0, null, 0, 1, null, 0, null, admin, 2019-05-11 17:19:30.0, admin, 2019-05-11 18:00:22.0, 0, 0, 1
+<==        Row: 2aeddae571695cd6380f6d6d334d6e7d, f0675b52d89100ee88472b6800754a08, 布局统计报表, /report/ArchivesStatisticst, jeecg/report/ArchivesStatisticst, null, null, 1, null, null, 1, 0, null, 1, 1, null, 0, null, admin, 2019-04-03 18:32:48.0, null, null, 0, 0, null
+<==        Row: 3f915b2769fc80648e92d04e84ca059d, d7d6e2e4e2934f2c9385a623fd98c6f3, 用户管理, /isystem/user, system/UserList, null, null, 1, null, null, 1, 0, null, 1, 0, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-03-16 11:20:33.0, 0, 0, null
+<==        Row: 4148ec82b6acd69f470bea75fe41c357, 2a470fc0c3954d9dbb61de6d80846549, 单表模型示例, /jeecg/jeecgDemoList, jeecg/JeecgDemoList, DemoList, null, 1, null, null, 1, 0, null, 1, 1, null, 0, null, null, 2018-12-28 15:57:30.0, admin, 2019-02-15 16:24:37.0, 0, 0, null
+<==        Row: 45c966826eeff4c99b8f8ebfe74511fc, d7d6e2e4e2934f2c9385a623fd98c6f3, 部门管理, /isystem/depart, system/DepartList, null, null, 1, null, null, 1, 0, null, 1, 1, null, 0, null, admin, 2019-01-29 18:47:40.0, admin, 2019-03-07 19:23:16.0, 0, 0, null
+<==        Row: 53a9230444d33de28aa11cc108fb1dba, d7d6e2e4e2934f2c9385a623fd98c6f3, 我的消息, /isps/userAnnouncement, system/UserAnnouncementList, null, null, 1, null, null, 1, 0, null, 1, 1, null, 0, null, admin, 2019-04-19 10:16:00.0, null, null, 0, 0, null
+<==        Row: 5c2f42277948043026b7a14692456828, d7d6e2e4e2934f2c9385a623fd98c6f3, 我的部门, /isystem/departUserList, system/DepartUserList, null, null, 1, null, null, 1, 0, null, 1, 1, null, 0, null, admin, 2019-04-17 15:12:24.0, null, null, 0, 0, null
+<==        Row: 65a8f489f25a345836b7f44b1181197a, c65321e57b7949b7a975313220de0422, 403, /exception/403, exception/403, null, null, 1, null, null, 1, null, null, 1, 1, null, null, null, null, 2018-12-25 20:34:38.0, null, null, 0, 0, null
+<==        Row: 7593c9e3523a17bca83b8d7fe8a34e58, 3f915b2769fc80648e92d04e84ca059d, 添加用户按钮, , null, null, null, 2, user:add, 1, 1, 0, null, 1, 1, null, 0, null, admin, 2019-03-16 11:20:33.0, admin, 2019-05-17 18:31:25.0, 0, 0, 1
+<==        Row: aedbf679b5773c1f25e9f7b10111da73, 08e6b9dc3c04489c8e1ff2ce6f105aa4, SQL监控, {{ window._CONFIG['domianURL'] }}/druid/, layouts/IframePageView, null, null, 1, null, null, 1, 0, null, 1, 1, null, 0, null, admin, 2019-01-30 09:43:22.0, admin, 2019-03-23 19:00:46.0, 0, 0, null
+<==        Row: d86f58e7ab516d3bc6bfb1fe10585f97, 717f6bee46f44a3897eca9abd6e2ec44, 个人中心, /account/center, account/center/Index, null, null, 1, null, null, 1, null, null, 1, 1, null, null, null, null, 2018-12-25 20:34:38.0, null, null, 0, 0, null
+<==        Row: f0675b52d89100ee88472b6800754a08, , 统计报表, /report, layouts/RouteView, null, null, 0, null, null, 1, 0, bar-chart, 1, 0, null, 0, null, admin, 2019-04-03 18:32:02.0, admin, 2019-05-19 18:34:13.0, 0, 0, null
+<==        Row: 13212d3416eb690c2e1d5033166ff47a, 2e42e3835c2b44ec9f7bc26c146ee531, 失败, /result/fail, result/Error, null, null, 1, null, null, 2, null, null, 1, 1, null, null, null, null, 2018-12-25 20:34:38.0, null, null, 0, 0, null
+<==        Row: 6ad53fd1b220989a8b71ff482d683a5a, 2a470fc0c3954d9dbb61de6d80846549, 一对多Tab示例, /jeecg/tablist/JeecgOrderDMainList, jeecg/tablist/JeecgOrderDMainList, null, null, 1, null, null, 2, 0, null, 1, 1, null, 0, null, admin, 2019-02-20 14:45:09.0, admin, 2019-02-21 16:26:21.0, 0, 0, null
+<==        Row: 6e73eb3c26099c191bf03852ee1310a1, 717f6bee46f44a3897eca9abd6e2ec44, 个人设置, /account/settings/base, account/settings/Index, null, null, 1, null, null, 2, 1, null, 1, 0, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-04-19 09:41:05.0, 0, 0, null
+<==        Row: d2bbf9ebca5a8fa2e227af97d2da7548, c65321e57b7949b7a975313220de0422, 404, /exception/404, exception/404, null, null, 1, null, null, 2, null, null, 1, 1, null, null, null, null, 2018-12-25 20:34:38.0, null, null, 0, 0, null
+<==        Row: fb367426764077dcf94640c843733985, 2a470fc0c3954d9dbb61de6d80846549, 一对多示例, /jeecg/JeecgOrderMainList, jeecg/JeecgOrderMainList, null, null, 1, null, null, 2, 0, null, 1, 1, null, 0, null, admin, 2019-02-15 16:24:11.0, admin, 2019-02-18 10:50:14.0, 0, 0, null
+<==        Row: 020b06793e4de2eee0007f603000c769, f0675b52d89100ee88472b6800754a08, ViserChartDemo, /report/ViserChartDemo, jeecg/report/ViserChartDemo, null, null, 1, null, null, 3, 0, null, 1, 1, null, 0, null, admin, 2019-04-03 19:08:53.0, admin, 2019-04-03 19:08:53.0, 0, 0, null
+<==        Row: 2dbbafa22cda07fa5d169d741b81fe12, 08e6b9dc3c04489c8e1ff2ce6f105aa4, 在线文档, {{ window._CONFIG['domianURL'] }}/swagger-ui.html#/, layouts/IframePageView, null, null, 1, null, null, 3, 0, null, 1, 1, null, 0, null, admin, 2019-01-30 10:00:01.0, admin, 2019-03-23 19:44:43.0, 0, 0, null
+<==        Row: 8fb8172747a78756c11916216b8b8066, 717f6bee46f44a3897eca9abd6e2ec44, 工作台, /dashboard/workplace, dashboard/Workplace, null, null, 1, null, null, 3, 0, null, 1, 1, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-04-02 11:45:02.0, 0, 0, null
+<==        Row: b4dfc7d5dd9e8d5b6dd6d4579b1aa559, c65321e57b7949b7a975313220de0422, 500, /exception/500, exception/500, null, null, 1, null, null, 3, null, null, 1, 1, null, null, null, null, 2018-12-25 20:34:38.0, null, null, 0, 0, null
+<==        Row: e6bfd1fcabfd7942fdd05f076d1dad38, 2a470fc0c3954d9dbb61de6d80846549, 打印测试, /jeecg/PrintDemo, jeecg/PrintDemo, null, null, 1, null, null, 3, 0, null, 1, 1, null, 0, null, admin, 2019-02-19 15:58:48.0, admin, 2019-05-07 20:14:39.0, 0, 0, null
+<==        Row: 339329ed54cf255e1f9392e84f136901, 2a470fc0c3954d9dbb61de6d80846549, helloworld, /jeecg/helloworld, jeecg/helloworld, null, null, 1, null, null, 4, 0, null, 1, 1, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-02-15 16:24:56.0, 0, 0, null
+<==        Row: a400e4f4d54f79bf5ce160ae432231af, 2a470fc0c3954d9dbb61de6d80846549, 百度, http://www.baidu.com, layouts/IframePageView, null, null, 1, null, null, 4, 0, null, 1, 1, null, 0, null, admin, 2019-01-29 19:44:06.0, admin, 2019-02-15 16:25:02.0, 0, 0, null
+<==        Row: d7d6e2e4e2934f2c9385a623fd98c6f3, , 系统管理, /isystem, layouts/RouteView, null, null, 0, null, null, 4, 0, setting, 1, 0, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-03-31 22:19:52.0, 0, 0, null
+<==        Row: 08e6b9dc3c04489c8e1ff2ce6f105aa4, , 系统监控, /dashboard3, layouts/RouteView, null, null, 0, null, null, 6, 0, dashboard, 1, 0, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-03-31 22:19:58.0, 0, 0, null
+<==        Row: c6cf95444d80435eb37b2f9db3971ae6, 2a470fc0c3954d9dbb61de6d80846549, 数据回执模拟, /jeecg/InterfaceTest, jeecg/InterfaceTest, null, null, 1, null, null, 6, 0, null, 1, 1, null, 0, null, admin, 2019-02-19 16:02:23.0, admin, 2019-02-21 16:25:45.0, 0, 0, null
+<==        Row: e08cb190ef230d5d4f03824198773950, d7d6e2e4e2934f2c9385a623fd98c6f3, 系统通告, /isystem/annountCement, system/SysAnnouncementList, null, null, 1, annountCement, null, 6, null, , 1, 1, null, null, null, null, 2019-01-02 17:23:01.0, null, 2019-01-02 17:31:23.0, 0, 0, null
+<==        Row: 2a470fc0c3954d9dbb61de6d80846549, , 常见案例, /jeecg, layouts/RouteView, null, null, 0, null, null, 7, 0, qrcode, 1, 0, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-04-02 11:46:42.0, 0, 0, null
+<==        Row: c65321e57b7949b7a975313220de0422, null, 异常页, /exception, layouts/RouteView, null, null, 0, null, null, 8, null, warning, 1, 0, null, null, null, null, 2018-12-25 20:34:38.0, null, null, 0, 0, null
+<==        Row: 717f6bee46f44a3897eca9abd6e2ec44, null, 个人页, /account, layouts/RouteView, null, null, 0, null, null, 9, 0, user, 1, 0, null, null, null, null, 2018-12-25 20:34:38.0, null, null, 0, 0, null
+<==      Total: 38
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3000732f]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48d4b22b] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@731602c1] will not be managed by Spring
+==>  Preparing: SELECT id,parent_id,name,perms,perms_type,icon,component,component_name,url,redirect,sort_no,menu_type,is_leaf AS leaf,is_route AS route,keep_alive,description,create_by,del_flag,rule_flag,hidden,create_time,update_by,update_time,status,always_show FROM sys_permission WHERE del_flag = ? AND menu_type = ? 
+==> Parameters: 0(Integer), 2(Integer)
+<==    Columns: id, parent_id, name, perms, perms_type, icon, component, component_name, url, redirect, sort_no, menu_type, leaf, route, keep_alive, description, create_by, del_flag, rule_flag, hidden, create_time, update_by, update_time, status, always_show
+<==        Row: 1a0811914300741f4e11838ff37a1d3a, 3f915b2769fc80648e92d04e84ca059d, 手机号禁用, user:form:phone, 2, null, null, null, null, null, 1, 2, 1, 0, null, null, admin, 0, 0, 0, 2019-05-11 17:19:30.0, admin, 2019-05-11 18:00:22.0, 1, 0
+<==        Row: 7593c9e3523a17bca83b8d7fe8a34e58, 3f915b2769fc80648e92d04e84ca059d, 添加用户按钮, user:add, 1, null, null, null, , null, 1, 2, 1, 1, null, null, admin, 0, 0, 0, 2019-03-16 11:20:33.0, admin, 2019-05-17 18:31:25.0, 1, 0
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48d4b22b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@179bef58] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@731602c1] will not be managed by Spring
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c2dae7e] was not registered for synchronization because synchronization is not active
+==>  Preparing: select * from sys_user where username = ? and del_flag = '0' 
+==> Parameters: jeecg(String)
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5886e7d5] will not be managed by Spring
+==>  Preparing: select * from sys_user where username = ? and del_flag = '0' 
+==> Parameters: jeecg(String)
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ea7ebc9] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==>  Preparing: select * from sys_user where username = ? and del_flag = '0' 
+==> Parameters: jeecg(String)
+<==    Columns: id, username, realname, password, salt, avatar, birthday, sex, email, phone, org_code, status, del_flag, activiti_sync, create_by, create_time, update_by, update_time
+<==    Columns: id, username, realname, password, salt, avatar, birthday, sex, email, phone, org_code, status, del_flag, activiti_sync, create_by, create_time, update_by, update_time
+<==        Row: a75d45a015c44384a04449ee80dc3503, jeecg, 林敏峰, 3dd8371f3cf8240e, vDDkDzrK, files/20190719/YourName_1563518555133.jpg, 1995-10-20 00:00:00.0, 1, lmf951020@163.com, 18695709329, A03, 1, 0, 1, admin, 2019-02-13 16:02:36.0, admin, 2019-08-21 16:21:04.0
+<==        Row: a75d45a015c44384a04449ee80dc3503, jeecg, 林敏峰, 3dd8371f3cf8240e, vDDkDzrK, files/20190719/YourName_1563518555133.jpg, 1995-10-20 00:00:00.0, 1, lmf951020@163.com, 18695709329, A03, 1, 0, 1, admin, 2019-02-13 16:02:36.0, admin, 2019-08-21 16:21:04.0
+<==      Total: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@179bef58]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c2dae7e]
+<==    Columns: id, username, realname, password, salt, avatar, birthday, sex, email, phone, org_code, status, del_flag, activiti_sync, create_by, create_time, update_by, update_time
+<==        Row: a75d45a015c44384a04449ee80dc3503, jeecg, 林敏峰, 3dd8371f3cf8240e, vDDkDzrK, files/20190719/YourName_1563518555133.jpg, 1995-10-20 00:00:00.0, 1, lmf951020@163.com, 18695709329, A03, 1, 0, 1, admin, 2019-02-13 16:02:36.0, admin, 2019-08-21 16:21:04.0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ea7ebc9]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3693c4c9] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==>  Preparing: select sas.annt_id from sys_announcement_send sas where sas.user_id = ? 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String)
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ac68ebf] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5886e7d5] will not be managed by Spring
+==>  Preparing: select count(*) as visit, count(distinct(ip)) as ip, DATE_FORMAT(create_time, '%Y-%m-%d') as tian, DATE_FORMAT(create_time, '%m-%d') as type from sys_log where log_type = 1 and create_time >= ? and create_time < ? group by tian order by tian asc 
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@754b2b30] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@731602c1] will not be managed by Spring
+==>  Preparing: select count(1) from sys_log where log_type = 1 
+==> Parameters: 
+==> Parameters: 2019-08-31 00:00:00.0(Timestamp), 2019-09-07 00:00:00.0(Timestamp)
+<==    Columns: annt_id
+<==        Row: 93a9060a1c20e4bf98b3f768a02c2ff9
+<==        Row: a1b0ae2f03fef5e34475124adc743c4a
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3693c4c9]
+<==    Columns: count(1)
+<==        Row: 817
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@754b2b30]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17935097] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@731602c1] will not be managed by Spring
+==>  Preparing: select count(1) from sys_log where log_type = 1 and create_time >= ? and create_time < ? 
+==> Parameters: 2019-09-06 00:00:00.0(Timestamp), 2019-09-07 00:00:00.0(Timestamp)
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@602a9770] was not registered for synchronization because synchronization is not active
+<==    Columns: count(1)
+<==        Row: 5
+<==      Total: 1
+2019-09-06 17:34:24.445 [http-nio-8080-exec-10] ERROR druid.sql.Statement:149 - {conn-10004, pstmt-20018} execute error. select count(*) as visit,
+        	   count(distinct(ip)) as ip,
+        	   DATE_FORMAT(create_time, '%Y-%m-%d') as tian,
+        	   DATE_FORMAT(create_time, '%m-%d') as type
+         from sys_log 
+         where log_type = 1 and create_time >= ? and create_time < ?
+         group by tian
+         order by tian asc
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'mk-fun.sys_log.create_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2495)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1903)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1242)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at sun.reflect.GeneratedMethodAccessor178.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy232.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy230.query(Unknown Source)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy229.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy126.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:158)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:76)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:62)
+	at com.sun.proxy.$Proxy149.findVisitCount(Unknown Source)
+	at org.jeecg.modules.system.service.impl.SysLogServiceImpl.findVisitCount(SysLogServiceImpl.java:57)
+	at org.jeecg.modules.system.service.impl.SysLogServiceImpl$$FastClassBySpringCGLIB$$2077297.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.system.service.impl.SysLogServiceImpl$$EnhancerBySpringCGLIB$$5ab0f675.findVisitCount(<generated>)
+	at org.jeecg.modules.system.service.impl.SysLogServiceImpl$$FastClassBySpringCGLIB$$2077297.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.system.service.impl.SysLogServiceImpl$$EnhancerBySpringCGLIB$$5b4f38ad.findVisitCount(<generated>)
+	at org.jeecg.modules.system.controller.LoginController.visitInfo(LoginController.java:165)
+	at org.jeecg.modules.system.controller.LoginController$$FastClassBySpringCGLIB$$b307ab61.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at org.jeecg.modules.system.aspect.DictAspect.doAround(DictAspect.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at org.jeecg.modules.system.controller.LoginController$$EnhancerBySpringCGLIB$$3f1af947.visitInfo(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:81)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17935097]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@773daf98] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@731602c1] will not be managed by Spring
+==>  Preparing: select count(distinct(ip)) from sys_log where log_type = 1 and create_time >= ? and create_time < ? 
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==> Parameters: 2019-09-06 00:00:00.0(Timestamp), 2019-09-07 00:00:00.0(Timestamp)
+==>  Preparing: SELECT id,titile,msg_content,start_time,end_time,sender,priority,msg_category,msg_type,send_status,send_time,cancel_time,del_flag,create_by,create_time,update_by,update_time,user_ids FROM sys_announcement WHERE msg_type = ? AND del_flag = ? AND send_status = ? AND id NOT IN (?,?) 
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ac68ebf]
+==> Parameters: ALL(String), 0(String), 1(String), 93a9060a1c20e4bf98b3f768a02c2ff9(String), a1b0ae2f03fef5e34475124adc743c4a(String)
+<==    Columns: count(distinct(ip))
+<==        Row: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@773daf98]
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@602a9770]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@710ac34] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+JsqlParserCountOptimize sql=select sa.* from sys_announcement sa,sys_announcement_send sas 
+	   where sa.id = sas.annt_id 
+	   and sa.send_status = '1'
+	   and sa.del_flag = '0'
+	   and sas.user_id = ?
+	   and sa.msg_category = ?
+	   and sas.read_flag = '0'
+2019-09-06 17:34:24.770 [http-nio-8080-exec-10] ERROR o.jeecg.common.exception.JeecgBootExceptionHandler:53 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'mk-fun.sys_log.create_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+### The error may exist in URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/system/mapper/xml/SysLogMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select count(*) as visit,             count(distinct(ip)) as ip,             DATE_FORMAT(create_time, '%Y-%m-%d') as tian,             DATE_FORMAT(create_time, '%m-%d') as type          from sys_log           where log_type = 1 and create_time >= ? and create_time < ?          group by tian          order by tian asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'mk-fun.sys_log.create_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'mk-fun.sys_log.create_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'mk-fun.sys_log.create_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+### The error may exist in URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/system/mapper/xml/SysLogMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select count(*) as visit,             count(distinct(ip)) as ip,             DATE_FORMAT(create_time, '%Y-%m-%d') as tian,             DATE_FORMAT(create_time, '%m-%d') as type          from sys_log           where log_type = 1 and create_time >= ? and create_time < ?          group by tian          order by tian asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'mk-fun.sys_log.create_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'mk-fun.sys_log.create_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:93)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy126.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:158)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:76)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:62)
+	at com.sun.proxy.$Proxy149.findVisitCount(Unknown Source)
+	at org.jeecg.modules.system.service.impl.SysLogServiceImpl.findVisitCount(SysLogServiceImpl.java:57)
+	at org.jeecg.modules.system.service.impl.SysLogServiceImpl$$FastClassBySpringCGLIB$$2077297.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.system.service.impl.SysLogServiceImpl$$EnhancerBySpringCGLIB$$5ab0f675.findVisitCount(<generated>)
+	at org.jeecg.modules.system.service.impl.SysLogServiceImpl$$FastClassBySpringCGLIB$$2077297.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.system.service.impl.SysLogServiceImpl$$EnhancerBySpringCGLIB$$5b4f38ad.findVisitCount(<generated>)
+	at org.jeecg.modules.system.controller.LoginController.visitInfo(LoginController.java:165)
+	at org.jeecg.modules.system.controller.LoginController$$FastClassBySpringCGLIB$$b307ab61.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at org.jeecg.modules.system.aspect.DictAspect.doAround(DictAspect.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at org.jeecg.modules.system.controller.LoginController$$EnhancerBySpringCGLIB$$3f1af947.visitInfo(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:81)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'mk-fun.sys_log.create_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2495)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1903)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1242)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at sun.reflect.GeneratedMethodAccessor178.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy232.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy230.query(Unknown Source)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy229.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 124 common frames omitted
+==>  Preparing: SELECT COUNT(1) FROM sys_announcement sa, sys_announcement_send sas WHERE sa.id = sas.annt_id AND sa.send_status = '1' AND sa.del_flag = '0' AND sas.user_id = ? AND sa.msg_category = ? AND sas.read_flag = '0' 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String), 1(String)
+<==    Columns: COUNT(1)
+<==        Row: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@710ac34]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eb41b8d] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+JsqlParserCountOptimize sql=select sa.* from sys_announcement sa,sys_announcement_send sas 
+	   where sa.id = sas.annt_id 
+	   and sa.send_status = '1'
+	   and sa.del_flag = '0'
+	   and sas.user_id = ?
+	   and sa.msg_category = ?
+	   and sas.read_flag = '0'
+==>  Preparing: SELECT COUNT(1) FROM sys_announcement sa, sys_announcement_send sas WHERE sa.id = sas.annt_id AND sa.send_status = '1' AND sa.del_flag = '0' AND sas.user_id = ? AND sa.msg_category = ? AND sas.read_flag = '0' 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String), 2(String)
+<==    Columns: COUNT(1)
+<==        Row: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eb41b8d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@464347b0] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==>  Preparing: select * from sys_user where username = ? and del_flag = '0' 
+==> Parameters: jeecg(String)
+<==    Columns: id, username, realname, password, salt, avatar, birthday, sex, email, phone, org_code, status, del_flag, activiti_sync, create_by, create_time, update_by, update_time
+<==        Row: a75d45a015c44384a04449ee80dc3503, jeecg, 林敏峰, 3dd8371f3cf8240e, vDDkDzrK, files/20190719/YourName_1563518555133.jpg, 1995-10-20 00:00:00.0, 1, lmf951020@163.com, 18695709329, A03, 1, 0, 1, admin, 2019-02-13 16:02:36.0, admin, 2019-08-21 16:21:04.0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@464347b0]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c12dd0d] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==>  Preparing: select sas.annt_id from sys_announcement_send sas where sas.user_id = ? 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String)
+<==    Columns: annt_id
+<==        Row: 93a9060a1c20e4bf98b3f768a02c2ff9
+<==        Row: a1b0ae2f03fef5e34475124adc743c4a
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c12dd0d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@752a6b06] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==>  Preparing: SELECT id,titile,msg_content,start_time,end_time,sender,priority,msg_category,msg_type,send_status,send_time,cancel_time,del_flag,create_by,create_time,update_by,update_time,user_ids FROM sys_announcement WHERE msg_type = ? AND del_flag = ? AND send_status = ? AND id NOT IN (?,?) 
+==> Parameters: ALL(String), 0(String), 1(String), 93a9060a1c20e4bf98b3f768a02c2ff9(String), a1b0ae2f03fef5e34475124adc743c4a(String)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@752a6b06]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d41b4df] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+JsqlParserCountOptimize sql=select sa.* from sys_announcement sa,sys_announcement_send sas 
+	   where sa.id = sas.annt_id 
+	   and sa.send_status = '1'
+	   and sa.del_flag = '0'
+	   and sas.user_id = ?
+	   and sa.msg_category = ?
+	   and sas.read_flag = '0'
+==>  Preparing: SELECT COUNT(1) FROM sys_announcement sa, sys_announcement_send sas WHERE sa.id = sas.annt_id AND sa.send_status = '1' AND sa.del_flag = '0' AND sas.user_id = ? AND sa.msg_category = ? AND sas.read_flag = '0' 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String), 1(String)
+<==    Columns: COUNT(1)
+<==        Row: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d41b4df]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2754f7fd] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+JsqlParserCountOptimize sql=select sa.* from sys_announcement sa,sys_announcement_send sas 
+	   where sa.id = sas.annt_id 
+	   and sa.send_status = '1'
+	   and sa.del_flag = '0'
+	   and sas.user_id = ?
+	   and sa.msg_category = ?
+	   and sas.read_flag = '0'
+==>  Preparing: SELECT COUNT(1) FROM sys_announcement sa, sys_announcement_send sas WHERE sa.id = sas.annt_id AND sa.send_status = '1' AND sa.del_flag = '0' AND sas.user_id = ? AND sa.msg_category = ? AND sas.read_flag = '0' 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String), 2(String)
+<==    Columns: COUNT(1)
+<==        Row: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2754f7fd]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@476a1efe] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==>  Preparing: select * from sys_user where username = ? and del_flag = '0' 
+==> Parameters: jeecg(String)
+<==    Columns: id, username, realname, password, salt, avatar, birthday, sex, email, phone, org_code, status, del_flag, activiti_sync, create_by, create_time, update_by, update_time
+<==        Row: a75d45a015c44384a04449ee80dc3503, jeecg, 林敏峰, 3dd8371f3cf8240e, vDDkDzrK, files/20190719/YourName_1563518555133.jpg, 1995-10-20 00:00:00.0, 1, lmf951020@163.com, 18695709329, A03, 1, 0, 1, admin, 2019-02-13 16:02:36.0, admin, 2019-08-21 16:21:04.0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@476a1efe]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24cbe984] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==>  Preparing: select sas.annt_id from sys_announcement_send sas where sas.user_id = ? 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String)
+<==    Columns: annt_id
+<==        Row: 93a9060a1c20e4bf98b3f768a02c2ff9
+<==        Row: a1b0ae2f03fef5e34475124adc743c4a
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24cbe984]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@785f4c7f] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==>  Preparing: SELECT id,titile,msg_content,start_time,end_time,sender,priority,msg_category,msg_type,send_status,send_time,cancel_time,del_flag,create_by,create_time,update_by,update_time,user_ids FROM sys_announcement WHERE msg_type = ? AND del_flag = ? AND send_status = ? AND id NOT IN (?,?) 
+==> Parameters: ALL(String), 0(String), 1(String), 93a9060a1c20e4bf98b3f768a02c2ff9(String), a1b0ae2f03fef5e34475124adc743c4a(String)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@785f4c7f]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@366052f1] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+JsqlParserCountOptimize sql=select sa.* from sys_announcement sa,sys_announcement_send sas 
+	   where sa.id = sas.annt_id 
+	   and sa.send_status = '1'
+	   and sa.del_flag = '0'
+	   and sas.user_id = ?
+	   and sa.msg_category = ?
+	   and sas.read_flag = '0'
+==>  Preparing: SELECT COUNT(1) FROM sys_announcement sa, sys_announcement_send sas WHERE sa.id = sas.annt_id AND sa.send_status = '1' AND sa.del_flag = '0' AND sas.user_id = ? AND sa.msg_category = ? AND sas.read_flag = '0' 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String), 1(String)
+<==    Columns: COUNT(1)
+<==        Row: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@366052f1]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@164e7db2] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+JsqlParserCountOptimize sql=select sa.* from sys_announcement sa,sys_announcement_send sas 
+	   where sa.id = sas.annt_id 
+	   and sa.send_status = '1'
+	   and sa.del_flag = '0'
+	   and sas.user_id = ?
+	   and sa.msg_category = ?
+	   and sas.read_flag = '0'
+==>  Preparing: SELECT COUNT(1) FROM sys_announcement sa, sys_announcement_send sas WHERE sa.id = sas.annt_id AND sa.send_status = '1' AND sa.del_flag = '0' AND sas.user_id = ? AND sa.msg_category = ? AND sas.read_flag = '0' 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String), 2(String)
+<==    Columns: COUNT(1)
+<==        Row: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@164e7db2]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19282e51] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==>  Preparing: select * from sys_user where username = ? and del_flag = '0' 
+==> Parameters: jeecg(String)
+<==    Columns: id, username, realname, password, salt, avatar, birthday, sex, email, phone, org_code, status, del_flag, activiti_sync, create_by, create_time, update_by, update_time
+<==        Row: a75d45a015c44384a04449ee80dc3503, jeecg, 林敏峰, 3dd8371f3cf8240e, vDDkDzrK, files/20190719/YourName_1563518555133.jpg, 1995-10-20 00:00:00.0, 1, lmf951020@163.com, 18695709329, A03, 1, 0, 1, admin, 2019-02-13 16:02:36.0, admin, 2019-08-21 16:21:04.0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19282e51]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74e5710a] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==>  Preparing: select sas.annt_id from sys_announcement_send sas where sas.user_id = ? 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String)
+<==    Columns: annt_id
+<==        Row: 93a9060a1c20e4bf98b3f768a02c2ff9
+<==        Row: a1b0ae2f03fef5e34475124adc743c4a
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74e5710a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3bb3c9e8] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==>  Preparing: SELECT id,titile,msg_content,start_time,end_time,sender,priority,msg_category,msg_type,send_status,send_time,cancel_time,del_flag,create_by,create_time,update_by,update_time,user_ids FROM sys_announcement WHERE msg_type = ? AND del_flag = ? AND send_status = ? AND id NOT IN (?,?) 
+==> Parameters: ALL(String), 0(String), 1(String), 93a9060a1c20e4bf98b3f768a02c2ff9(String), a1b0ae2f03fef5e34475124adc743c4a(String)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3bb3c9e8]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12c5acac] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+JsqlParserCountOptimize sql=select sa.* from sys_announcement sa,sys_announcement_send sas 
+	   where sa.id = sas.annt_id 
+	   and sa.send_status = '1'
+	   and sa.del_flag = '0'
+	   and sas.user_id = ?
+	   and sa.msg_category = ?
+	   and sas.read_flag = '0'
+==>  Preparing: SELECT COUNT(1) FROM sys_announcement sa, sys_announcement_send sas WHERE sa.id = sas.annt_id AND sa.send_status = '1' AND sa.del_flag = '0' AND sas.user_id = ? AND sa.msg_category = ? AND sas.read_flag = '0' 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String), 1(String)
+<==    Columns: COUNT(1)
+<==        Row: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12c5acac]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c3d7011] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+JsqlParserCountOptimize sql=select sa.* from sys_announcement sa,sys_announcement_send sas 
+	   where sa.id = sas.annt_id 
+	   and sa.send_status = '1'
+	   and sa.del_flag = '0'
+	   and sas.user_id = ?
+	   and sa.msg_category = ?
+	   and sas.read_flag = '0'
+==>  Preparing: SELECT COUNT(1) FROM sys_announcement sa, sys_announcement_send sas WHERE sa.id = sas.annt_id AND sa.send_status = '1' AND sa.del_flag = '0' AND sas.user_id = ? AND sa.msg_category = ? AND sas.read_flag = '0' 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String), 2(String)
+<==    Columns: COUNT(1)
+<==        Row: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c3d7011]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35dbff72] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==>  Preparing: select * from sys_user where username = ? and del_flag = '0' 
+==> Parameters: jeecg(String)
+<==    Columns: id, username, realname, password, salt, avatar, birthday, sex, email, phone, org_code, status, del_flag, activiti_sync, create_by, create_time, update_by, update_time
+<==        Row: a75d45a015c44384a04449ee80dc3503, jeecg, 林敏峰, 3dd8371f3cf8240e, vDDkDzrK, files/20190719/YourName_1563518555133.jpg, 1995-10-20 00:00:00.0, 1, lmf951020@163.com, 18695709329, A03, 1, 0, 1, admin, 2019-02-13 16:02:36.0, admin, 2019-08-21 16:21:04.0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35dbff72]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@680e3a39] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==>  Preparing: select sas.annt_id from sys_announcement_send sas where sas.user_id = ? 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String)
+<==    Columns: annt_id
+<==        Row: 93a9060a1c20e4bf98b3f768a02c2ff9
+<==        Row: a1b0ae2f03fef5e34475124adc743c4a
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@680e3a39]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50b850a9] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==>  Preparing: SELECT id,titile,msg_content,start_time,end_time,sender,priority,msg_category,msg_type,send_status,send_time,cancel_time,del_flag,create_by,create_time,update_by,update_time,user_ids FROM sys_announcement WHERE msg_type = ? AND del_flag = ? AND send_status = ? AND id NOT IN (?,?) 
+==> Parameters: ALL(String), 0(String), 1(String), 93a9060a1c20e4bf98b3f768a02c2ff9(String), a1b0ae2f03fef5e34475124adc743c4a(String)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50b850a9]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56cebd63] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+JsqlParserCountOptimize sql=select sa.* from sys_announcement sa,sys_announcement_send sas 
+	   where sa.id = sas.annt_id 
+	   and sa.send_status = '1'
+	   and sa.del_flag = '0'
+	   and sas.user_id = ?
+	   and sa.msg_category = ?
+	   and sas.read_flag = '0'
+==>  Preparing: SELECT COUNT(1) FROM sys_announcement sa, sys_announcement_send sas WHERE sa.id = sas.annt_id AND sa.send_status = '1' AND sa.del_flag = '0' AND sas.user_id = ? AND sa.msg_category = ? AND sas.read_flag = '0' 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String), 1(String)
+<==    Columns: COUNT(1)
+<==        Row: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56cebd63]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35905a43] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+JsqlParserCountOptimize sql=select sa.* from sys_announcement sa,sys_announcement_send sas 
+	   where sa.id = sas.annt_id 
+	   and sa.send_status = '1'
+	   and sa.del_flag = '0'
+	   and sas.user_id = ?
+	   and sa.msg_category = ?
+	   and sas.read_flag = '0'
+==>  Preparing: SELECT COUNT(1) FROM sys_announcement sa, sys_announcement_send sas WHERE sa.id = sas.annt_id AND sa.send_status = '1' AND sa.del_flag = '0' AND sas.user_id = ? AND sa.msg_category = ? AND sas.read_flag = '0' 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String), 2(String)
+<==    Columns: COUNT(1)
+<==        Row: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35905a43]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19eefd05] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==>  Preparing: select * from sys_user where username = ? and del_flag = '0' 
+==> Parameters: jeecg(String)
+<==    Columns: id, username, realname, password, salt, avatar, birthday, sex, email, phone, org_code, status, del_flag, activiti_sync, create_by, create_time, update_by, update_time
+<==        Row: a75d45a015c44384a04449ee80dc3503, jeecg, 林敏峰, 3dd8371f3cf8240e, vDDkDzrK, files/20190719/YourName_1563518555133.jpg, 1995-10-20 00:00:00.0, 1, lmf951020@163.com, 18695709329, A03, 1, 0, 1, admin, 2019-02-13 16:02:36.0, admin, 2019-08-21 16:21:04.0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19eefd05]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c52b9aa] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==>  Preparing: select sas.annt_id from sys_announcement_send sas where sas.user_id = ? 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String)
+<==    Columns: annt_id
+<==        Row: 93a9060a1c20e4bf98b3f768a02c2ff9
+<==        Row: a1b0ae2f03fef5e34475124adc743c4a
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c52b9aa]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@242232ab] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==>  Preparing: SELECT id,titile,msg_content,start_time,end_time,sender,priority,msg_category,msg_type,send_status,send_time,cancel_time,del_flag,create_by,create_time,update_by,update_time,user_ids FROM sys_announcement WHERE msg_type = ? AND del_flag = ? AND send_status = ? AND id NOT IN (?,?) 
+==> Parameters: ALL(String), 0(String), 1(String), 93a9060a1c20e4bf98b3f768a02c2ff9(String), a1b0ae2f03fef5e34475124adc743c4a(String)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@242232ab]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6df46c69] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+JsqlParserCountOptimize sql=select sa.* from sys_announcement sa,sys_announcement_send sas 
+	   where sa.id = sas.annt_id 
+	   and sa.send_status = '1'
+	   and sa.del_flag = '0'
+	   and sas.user_id = ?
+	   and sa.msg_category = ?
+	   and sas.read_flag = '0'
+==>  Preparing: SELECT COUNT(1) FROM sys_announcement sa, sys_announcement_send sas WHERE sa.id = sas.annt_id AND sa.send_status = '1' AND sa.del_flag = '0' AND sas.user_id = ? AND sa.msg_category = ? AND sas.read_flag = '0' 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String), 1(String)
+<==    Columns: COUNT(1)
+<==        Row: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6df46c69]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e488b9c] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+JsqlParserCountOptimize sql=select sa.* from sys_announcement sa,sys_announcement_send sas 
+	   where sa.id = sas.annt_id 
+	   and sa.send_status = '1'
+	   and sa.del_flag = '0'
+	   and sas.user_id = ?
+	   and sa.msg_category = ?
+	   and sas.read_flag = '0'
+==>  Preparing: SELECT COUNT(1) FROM sys_announcement sa, sys_announcement_send sas WHERE sa.id = sas.annt_id AND sa.send_status = '1' AND sa.del_flag = '0' AND sas.user_id = ? AND sa.msg_category = ? AND sas.read_flag = '0' 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String), 2(String)
+<==    Columns: COUNT(1)
+<==        Row: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e488b9c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1df14db1] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==>  Preparing: select * from sys_user where username = ? and del_flag = '0' 
+==> Parameters: jeecg(String)
+<==    Columns: id, username, realname, password, salt, avatar, birthday, sex, email, phone, org_code, status, del_flag, activiti_sync, create_by, create_time, update_by, update_time
+<==        Row: a75d45a015c44384a04449ee80dc3503, jeecg, 林敏峰, 3dd8371f3cf8240e, vDDkDzrK, files/20190719/YourName_1563518555133.jpg, 1995-10-20 00:00:00.0, 1, lmf951020@163.com, 18695709329, A03, 1, 0, 1, admin, 2019-02-13 16:02:36.0, admin, 2019-08-21 16:21:04.0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1df14db1]
+2019-09-06 17:40:23.952 [http-nio-8080-exec-7] INFO  o.j.m.system.controller.SysPermissionController:120 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Njc3NjQyNjIsInVzZXJuYW1lIjoiamVlY2cifQ.CcD-fkcyRr_Z2ieauJUV_91kTaXinIWBWag9v-UnJnU
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65eed5cf] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==>  Preparing: SELECT p.* FROM sys_permission p WHERE exists( select a.id from sys_role_permission a join sys_role b on a.role_id = b.id join sys_user_role c on c.role_id = b.id join sys_user d on d.id = c.user_id where p.id = a.permission_id AND d.username = ? ) and p.del_flag = 0 order by p.sort_no ASC 
+==> Parameters: jeecg(String)
+<==    Columns: id, parent_id, name, url, component, component_name, redirect, menu_type, perms, perms_type, sort_no, always_show, icon, is_route, is_leaf, keep_alive, hidden, description, create_by, create_time, update_by, update_time, del_flag, rule_flag, status
+<==        Row: 1367a93f2c410b169faa7abcbad2f77c, 6e73eb3c26099c191bf03852ee1310a1, 基本设置, /account/settings/base, account/settings/BaseSetting, null, null, 1, BaseSettings, null, null, 0, null, 1, 1, null, 1, null, null, 2018-12-26 18:58:35.0, admin, 2019-03-20 12:57:31.0, 0, 0, null
+<==        Row: 4f66409ef3bbd69c1d80469d6e2a885e, 6e73eb3c26099c191bf03852ee1310a1, 账户绑定, /account/settings/binding, account/settings/Binding, null, null, 1, BindingSettings, null, null, null, null, 1, 1, null, null, null, null, 2018-12-26 19:01:20.0, null, null, 0, 0, null
+<==        Row: 882a73768cfd7f78f3a37584f7299656, 6e73eb3c26099c191bf03852ee1310a1, 个性化设置, /account/settings/custom, account/settings/Custom, null, null, 1, CustomSettings, null, null, null, null, 1, 1, null, null, null, null, 2018-12-26 19:00:46.0, null, 2018-12-26 21:13:25.0, 0, 0, null
+<==        Row: ec8d607d0156e198b11853760319c646, 6e73eb3c26099c191bf03852ee1310a1, 安全设置, /account/settings/security, account/settings/Security, null, null, 1, SecuritySettings, null, null, null, null, 1, 1, null, null, null, null, 2018-12-26 18:59:52.0, null, null, 0, 0, null
+<==        Row: fedfbf4420536cacc0218557d263dfea, 6e73eb3c26099c191bf03852ee1310a1, 新消息通知, /account/settings/notification, account/settings/Notification, null, null, 1, NotificationSettings, null, null, null, , 1, 1, null, null, null, null, 2018-12-26 19:02:05.0, null, null, 0, 0, null
+<==        Row: 9502685863ab87f0ad1134142788a385, , 首页, /dashboard/analysis, dashboard/Analysis, null, null, 0, null, null, 0, 0, home, 1, 1, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-03-29 11:04:13.0, 0, 0, null
+<==        Row: 190c2b43bec6a5f7a4194a85db67d96a, d7d6e2e4e2934f2c9385a623fd98c6f3, 角色维护, /isystem/roleUserList, system/RoleUserList, null, null, 1, null, null, 1, 0, null, 1, 1, null, 0, null, admin, 2019-04-17 15:13:56.0, null, null, 0, 0, null
+<==        Row: 1a0811914300741f4e11838ff37a1d3a, 3f915b2769fc80648e92d04e84ca059d, 手机号禁用, null, null, null, null, 2, user:form:phone, 2, 1, 0, null, 0, 1, null, 0, null, admin, 2019-05-11 17:19:30.0, admin, 2019-05-11 18:00:22.0, 0, 0, 1
+<==        Row: 2aeddae571695cd6380f6d6d334d6e7d, f0675b52d89100ee88472b6800754a08, 布局统计报表, /report/ArchivesStatisticst, jeecg/report/ArchivesStatisticst, null, null, 1, null, null, 1, 0, null, 1, 1, null, 0, null, admin, 2019-04-03 18:32:48.0, null, null, 0, 0, null
+<==        Row: 3f915b2769fc80648e92d04e84ca059d, d7d6e2e4e2934f2c9385a623fd98c6f3, 用户管理, /isystem/user, system/UserList, null, null, 1, null, null, 1, 0, null, 1, 0, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-03-16 11:20:33.0, 0, 0, null
+<==        Row: 4148ec82b6acd69f470bea75fe41c357, 2a470fc0c3954d9dbb61de6d80846549, 单表模型示例, /jeecg/jeecgDemoList, jeecg/JeecgDemoList, DemoList, null, 1, null, null, 1, 0, null, 1, 1, null, 0, null, null, 2018-12-28 15:57:30.0, admin, 2019-02-15 16:24:37.0, 0, 0, null
+<==        Row: 45c966826eeff4c99b8f8ebfe74511fc, d7d6e2e4e2934f2c9385a623fd98c6f3, 部门管理, /isystem/depart, system/DepartList, null, null, 1, null, null, 1, 0, null, 1, 1, null, 0, null, admin, 2019-01-29 18:47:40.0, admin, 2019-03-07 19:23:16.0, 0, 0, null
+<==        Row: 53a9230444d33de28aa11cc108fb1dba, d7d6e2e4e2934f2c9385a623fd98c6f3, 我的消息, /isps/userAnnouncement, system/UserAnnouncementList, null, null, 1, null, null, 1, 0, null, 1, 1, null, 0, null, admin, 2019-04-19 10:16:00.0, null, null, 0, 0, null
+<==        Row: 5c2f42277948043026b7a14692456828, d7d6e2e4e2934f2c9385a623fd98c6f3, 我的部门, /isystem/departUserList, system/DepartUserList, null, null, 1, null, null, 1, 0, null, 1, 1, null, 0, null, admin, 2019-04-17 15:12:24.0, null, null, 0, 0, null
+<==        Row: 65a8f489f25a345836b7f44b1181197a, c65321e57b7949b7a975313220de0422, 403, /exception/403, exception/403, null, null, 1, null, null, 1, null, null, 1, 1, null, null, null, null, 2018-12-25 20:34:38.0, null, null, 0, 0, null
+<==        Row: 7593c9e3523a17bca83b8d7fe8a34e58, 3f915b2769fc80648e92d04e84ca059d, 添加用户按钮, , null, null, null, 2, user:add, 1, 1, 0, null, 1, 1, null, 0, null, admin, 2019-03-16 11:20:33.0, admin, 2019-05-17 18:31:25.0, 0, 0, 1
+<==        Row: aedbf679b5773c1f25e9f7b10111da73, 08e6b9dc3c04489c8e1ff2ce6f105aa4, SQL监控, {{ window._CONFIG['domianURL'] }}/druid/, layouts/IframePageView, null, null, 1, null, null, 1, 0, null, 1, 1, null, 0, null, admin, 2019-01-30 09:43:22.0, admin, 2019-03-23 19:00:46.0, 0, 0, null
+<==        Row: d86f58e7ab516d3bc6bfb1fe10585f97, 717f6bee46f44a3897eca9abd6e2ec44, 个人中心, /account/center, account/center/Index, null, null, 1, null, null, 1, null, null, 1, 1, null, null, null, null, 2018-12-25 20:34:38.0, null, null, 0, 0, null
+<==        Row: f0675b52d89100ee88472b6800754a08, , 统计报表, /report, layouts/RouteView, null, null, 0, null, null, 1, 0, bar-chart, 1, 0, null, 0, null, admin, 2019-04-03 18:32:02.0, admin, 2019-05-19 18:34:13.0, 0, 0, null
+<==        Row: 13212d3416eb690c2e1d5033166ff47a, 2e42e3835c2b44ec9f7bc26c146ee531, 失败, /result/fail, result/Error, null, null, 1, null, null, 2, null, null, 1, 1, null, null, null, null, 2018-12-25 20:34:38.0, null, null, 0, 0, null
+<==        Row: 6ad53fd1b220989a8b71ff482d683a5a, 2a470fc0c3954d9dbb61de6d80846549, 一对多Tab示例, /jeecg/tablist/JeecgOrderDMainList, jeecg/tablist/JeecgOrderDMainList, null, null, 1, null, null, 2, 0, null, 1, 1, null, 0, null, admin, 2019-02-20 14:45:09.0, admin, 2019-02-21 16:26:21.0, 0, 0, null
+<==        Row: 6e73eb3c26099c191bf03852ee1310a1, 717f6bee46f44a3897eca9abd6e2ec44, 个人设置, /account/settings/base, account/settings/Index, null, null, 1, null, null, 2, 1, null, 1, 0, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-04-19 09:41:05.0, 0, 0, null
+<==        Row: d2bbf9ebca5a8fa2e227af97d2da7548, c65321e57b7949b7a975313220de0422, 404, /exception/404, exception/404, null, null, 1, null, null, 2, null, null, 1, 1, null, null, null, null, 2018-12-25 20:34:38.0, null, null, 0, 0, null
+<==        Row: fb367426764077dcf94640c843733985, 2a470fc0c3954d9dbb61de6d80846549, 一对多示例, /jeecg/JeecgOrderMainList, jeecg/JeecgOrderMainList, null, null, 1, null, null, 2, 0, null, 1, 1, null, 0, null, admin, 2019-02-15 16:24:11.0, admin, 2019-02-18 10:50:14.0, 0, 0, null
+<==        Row: 020b06793e4de2eee0007f603000c769, f0675b52d89100ee88472b6800754a08, ViserChartDemo, /report/ViserChartDemo, jeecg/report/ViserChartDemo, null, null, 1, null, null, 3, 0, null, 1, 1, null, 0, null, admin, 2019-04-03 19:08:53.0, admin, 2019-04-03 19:08:53.0, 0, 0, null
+<==        Row: 2dbbafa22cda07fa5d169d741b81fe12, 08e6b9dc3c04489c8e1ff2ce6f105aa4, 在线文档, {{ window._CONFIG['domianURL'] }}/swagger-ui.html#/, layouts/IframePageView, null, null, 1, null, null, 3, 0, null, 1, 1, null, 0, null, admin, 2019-01-30 10:00:01.0, admin, 2019-03-23 19:44:43.0, 0, 0, null
+<==        Row: 8fb8172747a78756c11916216b8b8066, 717f6bee46f44a3897eca9abd6e2ec44, 工作台, /dashboard/workplace, dashboard/Workplace, null, null, 1, null, null, 3, 0, null, 1, 1, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-04-02 11:45:02.0, 0, 0, null
+<==        Row: b4dfc7d5dd9e8d5b6dd6d4579b1aa559, c65321e57b7949b7a975313220de0422, 500, /exception/500, exception/500, null, null, 1, null, null, 3, null, null, 1, 1, null, null, null, null, 2018-12-25 20:34:38.0, null, null, 0, 0, null
+<==        Row: e6bfd1fcabfd7942fdd05f076d1dad38, 2a470fc0c3954d9dbb61de6d80846549, 打印测试, /jeecg/PrintDemo, jeecg/PrintDemo, null, null, 1, null, null, 3, 0, null, 1, 1, null, 0, null, admin, 2019-02-19 15:58:48.0, admin, 2019-05-07 20:14:39.0, 0, 0, null
+<==        Row: 339329ed54cf255e1f9392e84f136901, 2a470fc0c3954d9dbb61de6d80846549, helloworld, /jeecg/helloworld, jeecg/helloworld, null, null, 1, null, null, 4, 0, null, 1, 1, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-02-15 16:24:56.0, 0, 0, null
+<==        Row: a400e4f4d54f79bf5ce160ae432231af, 2a470fc0c3954d9dbb61de6d80846549, 百度, http://www.baidu.com, layouts/IframePageView, null, null, 1, null, null, 4, 0, null, 1, 1, null, 0, null, admin, 2019-01-29 19:44:06.0, admin, 2019-02-15 16:25:02.0, 0, 0, null
+<==        Row: d7d6e2e4e2934f2c9385a623fd98c6f3, , 系统管理, /isystem, layouts/RouteView, null, null, 0, null, null, 4, 0, setting, 1, 0, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-03-31 22:19:52.0, 0, 0, null
+<==        Row: 08e6b9dc3c04489c8e1ff2ce6f105aa4, , 系统监控, /dashboard3, layouts/RouteView, null, null, 0, null, null, 6, 0, dashboard, 1, 0, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-03-31 22:19:58.0, 0, 0, null
+<==        Row: c6cf95444d80435eb37b2f9db3971ae6, 2a470fc0c3954d9dbb61de6d80846549, 数据回执模拟, /jeecg/InterfaceTest, jeecg/InterfaceTest, null, null, 1, null, null, 6, 0, null, 1, 1, null, 0, null, admin, 2019-02-19 16:02:23.0, admin, 2019-02-21 16:25:45.0, 0, 0, null
+<==        Row: e08cb190ef230d5d4f03824198773950, d7d6e2e4e2934f2c9385a623fd98c6f3, 系统通告, /isystem/annountCement, system/SysAnnouncementList, null, null, 1, annountCement, null, 6, null, , 1, 1, null, null, null, null, 2019-01-02 17:23:01.0, null, 2019-01-02 17:31:23.0, 0, 0, null
+<==        Row: 2a470fc0c3954d9dbb61de6d80846549, , 常见案例, /jeecg, layouts/RouteView, null, null, 0, null, null, 7, 0, qrcode, 1, 0, null, 0, null, null, 2018-12-25 20:34:38.0, admin, 2019-04-02 11:46:42.0, 0, 0, null
+<==        Row: c65321e57b7949b7a975313220de0422, null, 异常页, /exception, layouts/RouteView, null, null, 0, null, null, 8, null, warning, 1, 0, null, null, null, null, 2018-12-25 20:34:38.0, null, null, 0, 0, null
+<==        Row: 717f6bee46f44a3897eca9abd6e2ec44, null, 个人页, /account, layouts/RouteView, null, null, 0, null, null, 9, 0, user, 1, 0, null, null, null, null, 2018-12-25 20:34:38.0, null, null, 0, 0, null
+<==      Total: 38
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65eed5cf]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4746d778] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==>  Preparing: SELECT id,parent_id,name,perms,perms_type,icon,component,component_name,url,redirect,sort_no,menu_type,is_leaf AS leaf,is_route AS route,keep_alive,description,create_by,del_flag,rule_flag,hidden,create_time,update_by,update_time,status,always_show FROM sys_permission WHERE del_flag = ? AND menu_type = ? 
+==> Parameters: 0(Integer), 2(Integer)
+<==    Columns: id, parent_id, name, perms, perms_type, icon, component, component_name, url, redirect, sort_no, menu_type, leaf, route, keep_alive, description, create_by, del_flag, rule_flag, hidden, create_time, update_by, update_time, status, always_show
+<==        Row: 1a0811914300741f4e11838ff37a1d3a, 3f915b2769fc80648e92d04e84ca059d, 手机号禁用, user:form:phone, 2, null, null, null, null, null, 1, 2, 1, 0, null, null, admin, 0, 0, 0, 2019-05-11 17:19:30.0, admin, 2019-05-11 18:00:22.0, 1, 0
+<==        Row: 7593c9e3523a17bca83b8d7fe8a34e58, 3f915b2769fc80648e92d04e84ca059d, 添加用户按钮, user:add, 1, null, null, null, , null, 1, 2, 1, 1, null, null, admin, 0, 0, 0, 2019-03-16 11:20:33.0, admin, 2019-05-17 18:31:25.0, 1, 0
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4746d778]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36a9ed25] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+==>  Preparing: select * from sys_user where username = ? and del_flag = '0' 
+==> Parameters: jeecg(String)
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2bf36cd6] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@447d48d4] was not registered for synchronization because synchronization is not active
+<==    Columns: id, username, realname, password, salt, avatar, birthday, sex, email, phone, org_code, status, del_flag, activiti_sync, create_by, create_time, update_by, update_time
+<==        Row: a75d45a015c44384a04449ee80dc3503, jeecg, 林敏峰, 3dd8371f3cf8240e, vDDkDzrK, files/20190719/YourName_1563518555133.jpg, 1995-10-20 00:00:00.0, 1, lmf951020@163.com, 18695709329, A03, 1, 0, 1, admin, 2019-02-13 16:02:36.0, admin, 2019-08-21 16:21:04.0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36a9ed25]
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@731602c1] will not be managed by Spring
+==>  Preparing: select * from sys_user where username = ? and del_flag = '0' 
+==> Parameters: jeecg(String)
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5886e7d5] will not be managed by Spring
+==>  Preparing: select * from sys_user where username = ? and del_flag = '0' 
+==> Parameters: jeecg(String)
+<==    Columns: id, username, realname, password, salt, avatar, birthday, sex, email, phone, org_code, status, del_flag, activiti_sync, create_by, create_time, update_by, update_time
+<==        Row: a75d45a015c44384a04449ee80dc3503, jeecg, 林敏峰, 3dd8371f3cf8240e, vDDkDzrK, files/20190719/YourName_1563518555133.jpg, 1995-10-20 00:00:00.0, 1, lmf951020@163.com, 18695709329, A03, 1, 0, 1, admin, 2019-02-13 16:02:36.0, admin, 2019-08-21 16:21:04.0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2bf36cd6]
+<==    Columns: id, username, realname, password, salt, avatar, birthday, sex, email, phone, org_code, status, del_flag, activiti_sync, create_by, create_time, update_by, update_time
+<==        Row: a75d45a015c44384a04449ee80dc3503, jeecg, 林敏峰, 3dd8371f3cf8240e, vDDkDzrK, files/20190719/YourName_1563518555133.jpg, 1995-10-20 00:00:00.0, 1, lmf951020@163.com, 18695709329, A03, 1, 0, 1, admin, 2019-02-13 16:02:36.0, admin, 2019-08-21 16:21:04.0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@447d48d4]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@258a8f32] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5886e7d5] will not be managed by Spring
+==>  Preparing: select sas.annt_id from sys_announcement_send sas where sas.user_id = ? 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String)
+<==    Columns: annt_id
+<==        Row: 93a9060a1c20e4bf98b3f768a02c2ff9
+<==        Row: a1b0ae2f03fef5e34475124adc743c4a
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@258a8f32]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3285acfe] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5886e7d5] will not be managed by Spring
+==>  Preparing: SELECT id,titile,msg_content,start_time,end_time,sender,priority,msg_category,msg_type,send_status,send_time,cancel_time,del_flag,create_by,create_time,update_by,update_time,user_ids FROM sys_announcement WHERE msg_type = ? AND del_flag = ? AND send_status = ? AND id NOT IN (?,?) 
+==> Parameters: ALL(String), 0(String), 1(String), 93a9060a1c20e4bf98b3f768a02c2ff9(String), a1b0ae2f03fef5e34475124adc743c4a(String)
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9138335] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@731602c1] will not be managed by Spring
+==>  Preparing: select count(1) from sys_log where log_type = 1 
+==> Parameters: 
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3285acfe]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a10d458] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5886e7d5] will not be managed by Spring
+JsqlParserCountOptimize sql=select sa.* from sys_announcement sa,sys_announcement_send sas 
+	   where sa.id = sas.annt_id 
+	   and sa.send_status = '1'
+	   and sa.del_flag = '0'
+	   and sas.user_id = ?
+	   and sa.msg_category = ?
+	   and sas.read_flag = '0'
+==>  Preparing: SELECT COUNT(1) FROM sys_announcement sa, sys_announcement_send sas WHERE sa.id = sas.annt_id AND sa.send_status = '1' AND sa.del_flag = '0' AND sas.user_id = ? AND sa.msg_category = ? AND sas.read_flag = '0' 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String), 1(String)
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3186ccce] was not registered for synchronization because synchronization is not active
+<==    Columns: count(1)
+<==        Row: 817
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@27eed5f9] will not be managed by Spring
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9138335]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b82d85c] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@731602c1] will not be managed by Spring
+==>  Preparing: select count(*) as visit, count(distinct(ip)) as ip, DATE_FORMAT(create_time, '%Y-%m-%d') as tian, DATE_FORMAT(create_time, '%m-%d') as type from sys_log where log_type = 1 and create_time >= ? and create_time < ? group by tian order by tian asc 
+==>  Preparing: select count(1) from sys_log where log_type = 1 and create_time >= ? and create_time < ? 
+==> Parameters: 2019-09-06 00:00:00.0(Timestamp), 2019-09-07 00:00:00.0(Timestamp)
+==> Parameters: 2019-08-31 00:00:00.0(Timestamp), 2019-09-07 00:00:00.0(Timestamp)
+<==    Columns: COUNT(1)
+<==        Row: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a10d458]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bde2917] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5886e7d5] will not be managed by Spring
+JsqlParserCountOptimize sql=select sa.* from sys_announcement sa,sys_announcement_send sas 
+	   where sa.id = sas.annt_id 
+	   and sa.send_status = '1'
+	   and sa.del_flag = '0'
+	   and sas.user_id = ?
+	   and sa.msg_category = ?
+	   and sas.read_flag = '0'
+==>  Preparing: SELECT COUNT(1) FROM sys_announcement sa, sys_announcement_send sas WHERE sa.id = sas.annt_id AND sa.send_status = '1' AND sa.del_flag = '0' AND sas.user_id = ? AND sa.msg_category = ? AND sas.read_flag = '0' 
+==> Parameters: a75d45a015c44384a04449ee80dc3503(String), 2(String)
+<==    Columns: count(1)
+<==        Row: 5
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b82d85c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d14e5bc] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@731602c1] will not be managed by Spring
+==>  Preparing: select count(distinct(ip)) from sys_log where log_type = 1 and create_time >= ? and create_time < ? 
+==> Parameters: 2019-09-06 00:00:00.0(Timestamp), 2019-09-07 00:00:00.0(Timestamp)
+2019-09-06 17:40:25.308 [http-nio-8080-exec-1] ERROR druid.sql.Statement:149 - {conn-10003, pstmt-20030} execute error. select count(*) as visit,
+        	   count(distinct(ip)) as ip,
+        	   DATE_FORMAT(create_time, '%Y-%m-%d') as tian,
+        	   DATE_FORMAT(create_time, '%m-%d') as type
+         from sys_log 
+         where log_type = 1 and create_time >= ? and create_time < ?
+         group by tian
+         order by tian asc
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'mk-fun.sys_log.create_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2495)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1903)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1242)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at sun.reflect.GeneratedMethodAccessor178.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy232.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at sun.reflect.GeneratedMethodAccessor185.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy230.query(Unknown Source)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at sun.reflect.GeneratedMethodAccessor183.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy229.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.GeneratedMethodAccessor195.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy126.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:158)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:76)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:62)
+	at com.sun.proxy.$Proxy149.findVisitCount(Unknown Source)
+	at org.jeecg.modules.system.service.impl.SysLogServiceImpl.findVisitCount(SysLogServiceImpl.java:57)
+	at org.jeecg.modules.system.service.impl.SysLogServiceImpl$$FastClassBySpringCGLIB$$2077297.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.system.service.impl.SysLogServiceImpl$$EnhancerBySpringCGLIB$$5ab0f675.findVisitCount(<generated>)
+	at org.jeecg.modules.system.service.impl.SysLogServiceImpl$$FastClassBySpringCGLIB$$2077297.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.system.service.impl.SysLogServiceImpl$$EnhancerBySpringCGLIB$$5b4f38ad.findVisitCount(<generated>)
+	at org.jeecg.modules.system.controller.LoginController.visitInfo(LoginController.java:165)
+	at org.jeecg.modules.system.controller.LoginController$$FastClassBySpringCGLIB$$b307ab61.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at org.jeecg.modules.system.aspect.DictAspect.doAround(DictAspect.java:50)
+	at sun.reflect.GeneratedMethodAccessor216.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at org.jeecg.modules.system.controller.LoginController$$EnhancerBySpringCGLIB$$3f1af947.visitInfo(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:81)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+<==    Columns: COUNT(1)
+<==        Row: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bde2917]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3186ccce]
+2019-09-06 17:40:25.320 [http-nio-8080-exec-1] ERROR o.jeecg.common.exception.JeecgBootExceptionHandler:53 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'mk-fun.sys_log.create_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+### The error may exist in URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/system/mapper/xml/SysLogMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select count(*) as visit,             count(distinct(ip)) as ip,             DATE_FORMAT(create_time, '%Y-%m-%d') as tian,             DATE_FORMAT(create_time, '%m-%d') as type          from sys_log           where log_type = 1 and create_time >= ? and create_time < ?          group by tian          order by tian asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'mk-fun.sys_log.create_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'mk-fun.sys_log.create_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'mk-fun.sys_log.create_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+### The error may exist in URL [jar:file:/Users/linminfeng/Documents/Work/StudioWorks/Code/ServerCode/jeecg-boot/jeecg-boot-business/target/jeecg-boot-business-2.0.2.jar!/BOOT-INF/lib/jeecg-boot-module-system-2.0.2.jar!/org/jeecg/modules/system/mapper/xml/SysLogMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select count(*) as visit,             count(distinct(ip)) as ip,             DATE_FORMAT(create_time, '%Y-%m-%d') as tian,             DATE_FORMAT(create_time, '%m-%d') as type          from sys_log           where log_type = 1 and create_time >= ? and create_time < ?          group by tian          order by tian asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'mk-fun.sys_log.create_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'mk-fun.sys_log.create_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:93)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy126.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:158)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:76)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:62)
+	at com.sun.proxy.$Proxy149.findVisitCount(Unknown Source)
+	at org.jeecg.modules.system.service.impl.SysLogServiceImpl.findVisitCount(SysLogServiceImpl.java:57)
+	at org.jeecg.modules.system.service.impl.SysLogServiceImpl$$FastClassBySpringCGLIB$$2077297.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.system.service.impl.SysLogServiceImpl$$EnhancerBySpringCGLIB$$5ab0f675.findVisitCount(<generated>)
+	at org.jeecg.modules.system.service.impl.SysLogServiceImpl$$FastClassBySpringCGLIB$$2077297.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.system.service.impl.SysLogServiceImpl$$EnhancerBySpringCGLIB$$5b4f38ad.findVisitCount(<generated>)
+	at org.jeecg.modules.system.controller.LoginController.visitInfo(LoginController.java:165)
+	at org.jeecg.modules.system.controller.LoginController$$FastClassBySpringCGLIB$$b307ab61.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at org.jeecg.modules.system.aspect.DictAspect.doAround(DictAspect.java:50)
+	at sun.reflect.GeneratedMethodAccessor216.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at org.jeecg.modules.system.controller.LoginController$$EnhancerBySpringCGLIB$$3f1af947.visitInfo(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:81)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'mk-fun.sys_log.create_time' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2495)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1903)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1242)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at sun.reflect.GeneratedMethodAccessor178.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy232.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at sun.reflect.GeneratedMethodAccessor185.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy230.query(Unknown Source)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at sun.reflect.GeneratedMethodAccessor183.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy229.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.GeneratedMethodAccessor195.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 123 common frames omitted
+<==    Columns: count(distinct(ip))
+<==        Row: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d14e5bc]

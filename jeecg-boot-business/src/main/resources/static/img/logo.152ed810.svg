@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 35.619px;
+        fill: #fff;
+        text-anchor: middle;
+        font-family: "LingWai SC";
+        font-weight: 500;
+        text-decoration: line-through;
+      }
+    </style>
+  </defs>
+  <text id="MF" class="cls-1" transform="translate(28.474 49.133) scale(1.348)"><tspan x="0">MF</tspan></text>
+</svg>
